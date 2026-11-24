@@ -1,0 +1,95 @@
+.root {
+    -fx-font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #fff8fa;
+    -fx-text-fill: #5b3345;
+}
+.app-root { -fx-background-color: linear-gradient(to bottom right, #fff9fb, #fcebf1 52%, #f7e2ea); }
+.label { -fx-text-fill: #5b3345; }
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, rgba(109,55,78,.97), rgba(128,62,89,.95));
+    -fx-border-color: transparent rgba(255,211,226,.8) transparent transparent;
+    -fx-border-width: 0 1 0 0;
+    -fx-effect: dropshadow(gaussian, rgba(104,45,70,.20), 22, .14, 5, 0);
+}
+.brand { -fx-font-size: 23px; -fx-font-weight: 900; -fx-text-fill: linear-gradient(to right, #fff1f6, #ffc7da); -fx-letter-spacing: 2px; }
+.brand-subtitle { -fx-font-size: 10px; -fx-text-fill: #efb9cc; -fx-letter-spacing: 3px; }
+.offline-badge { -fx-text-fill: #ffe5ee; -fx-font-size: 10px; -fx-padding: 8 10; -fx-background-color: rgba(255,216,229,.13); -fx-background-radius: 14px; }
+.nav-button { -fx-alignment: center-left; -fx-background-color: transparent; -fx-text-fill: #f2cad8; -fx-font-size: 14px; -fx-padding: 13 15; -fx-cursor: hand; -fx-background-radius: 13px; }
+.nav-button:hover { -fx-background-color: rgba(255,218,230,.14); -fx-text-fill: #fff8fb; -fx-translate-x: 3px; }
+.nav-button:selected { -fx-background-color: linear-gradient(to right, rgba(255,194,215,.30), rgba(255,240,246,.10)); -fx-text-fill: white; -fx-border-color: transparent transparent transparent #ffb6cf; -fx-border-width: 0 0 0 3; }
+.content-area { -fx-background-color: transparent; }
+.page-title { -fx-font-family: "Georgia", "Avenir Next", serif; -fx-font-size: 31px; -fx-font-weight: 800; -fx-text-fill: #6f3951; }
+.page-subtitle { -fx-text-fill: #9a6a7e; -fx-padding: 0 0 17 0; }
+.glass-card {
+    -fx-background-color: rgba(255,255,255,.72);
+    -fx-background-radius: 19px;
+    -fx-border-color: rgba(224,146,174,.28);
+    -fx-border-radius: 19px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(130,65,91,.13), 24, .12, 0, 8);
+}
+.glass-card:hover { -fx-border-color: rgba(214,104,145,.52); -fx-effect: dropshadow(gaussian, rgba(179,85,120,.20), 28, .15, 0, 7); }
+.card-title { -fx-font-family: "Georgia", "Avenir Next", serif; -fx-font-size: 17px; -fx-font-weight: 700; -fx-text-fill: #703a52; }
+.stat-number { -fx-font-size: 32px; -fx-font-weight: 900; }
+.stat-label { -fx-font-size: 10px; -fx-text-fill: #a36f83; -fx-letter-spacing: 1.4px; }
+.note-link { -fx-background-color: transparent; -fx-text-fill: #85546a; -fx-alignment: center-left; -fx-padding: 7 4; -fx-cursor: hand; }
+.note-link:hover { -fx-text-fill: #cf5f8b; -fx-translate-x: 3px; }
+.sphere-fallback { -fx-font-size: 15px; -fx-text-fill: #cf5f8b; }
+.primary-button {
+    -fx-background-color: linear-gradient(to right, #d86491, #b94f7c);
+    -fx-text-fill: white; -fx-font-weight: 700; -fx-padding: 10 17; -fx-background-radius: 12px; -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian,rgba(195,78,123,.30),15,.2,0,4);
+}
+.primary-button:hover { -fx-background-color: linear-gradient(to right, #e77ca2, #c95a87); -fx-scale-x: 1.025; -fx-scale-y: 1.025; }
+.secondary-button { -fx-background-color: rgba(255,255,255,.58); -fx-text-fill: #854b65; -fx-border-color: rgba(198,104,139,.34); -fx-border-radius: 11px; -fx-background-radius: 11px; -fx-padding: 8 13; -fx-cursor: hand; }
+.secondary-button:hover { -fx-background-color: #fff4f8; -fx-border-color: #d66891; -fx-text-fill: #a6426a; }
+.text-field, .text-area, .combo-box { -fx-background-color: rgba(255,255,255,.78); -fx-text-fill: #583144; -fx-prompt-text-fill: #b28b9b; -fx-border-color: rgba(203,122,152,.28); -fx-border-radius: 11px; -fx-background-radius: 11px; -fx-padding: 9px; }
+.text-field:focused, .text-area:focused, .combo-box:focused { -fx-border-color: #d66891; -fx-effect: dropshadow(gaussian,rgba(211,95,140,.20),10,.1,0,0); }
+.text-area .content { -fx-background-color: #fffafb; -fx-background-radius: 10px; }
+.combo-box .list-cell { -fx-text-fill: #5b3345; }
+.combo-box-popup .list-view { -fx-background-color: #fff8fa; -fx-border-color: #e7afc3; }
+.combo-box-popup .list-cell:hover { -fx-background-color: #f9dce7; }
+.check-box { -fx-text-fill: #6e4054; }
+.check-box .box { -fx-background-color: #fff8fa; -fx-border-color: #d991ab; -fx-border-radius: 4px; }
+.check-box:selected .mark { -fx-background-color: white; }
+.check-box:selected .box { -fx-background-color: #cf5f8b; }
+.list-view, .table-view { -fx-background-color: transparent; -fx-border-color: transparent; }
+.list-cell { -fx-background-color: transparent; -fx-padding: 5 0; }
+.list-cell:selected .note-row { -fx-border-color: #d66891; }
+.note-row { -fx-background-color: rgba(255,255,255,.67); -fx-background-radius: 16px; -fx-border-color: rgba(211,132,161,.20); -fx-border-radius: 16px; }
+.note-row:hover { -fx-background-color: rgba(255,247,250,.96); -fx-border-color: rgba(207,95,139,.48); }
+.note-title { -fx-font-family: "Georgia", "Avenir Next", serif; -fx-font-size: 16px; -fx-font-weight: 700; -fx-text-fill: #6c374f; }
+.note-meta { -fx-font-size: 11px; -fx-text-fill: #a17386; }
+.tag-bubble, .tag-bubble-large { -fx-background-color: rgba(236,155,184,.18); -fx-border-color: rgba(211,102,143,.38); -fx-border-radius: 18px; -fx-background-radius: 18px; -fx-text-fill: #b34871; -fx-cursor: hand; }
+.tag-bubble { -fx-font-size: 11px; -fx-padding: 5 10; }
+.tag-bubble-large { -fx-font-size: 14px; -fx-padding: 9 15; }
+.tag-bubble:hover, .tag-bubble-large:hover { -fx-background-color: rgba(214,104,145,.28); -fx-border-color: #c94f7d; -fx-text-fill: #8f345b; }
+.scroll-pane, .scroll-pane > .viewport { -fx-background-color: transparent; }
+.scroll-bar:vertical, .scroll-bar:horizontal { -fx-background-color: transparent; }
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb { -fx-background-color: #d8a0b5; -fx-background-radius: 8px; }
+.chart { -fx-padding: 12px; }
+.chart-title, .axis-label { -fx-text-fill: #6f3c53; }
+.axis { -fx-tick-label-fill: #9d7183; }
+.axis-tick-mark, .axis-minor-tick-mark { -fx-stroke: #dfbac8; }
+.chart-plot-background { -fx-background-color: rgba(255,250,252,.55); }
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines { -fx-stroke: rgba(209,151,172,.22); }
+.chart-bar { -fx-bar-fill: #d86491; }
+.chart-pie-label { -fx-fill: #744459; }
+.default-color0.chart-pie { -fx-pie-color: #c94f7d; }
+.default-color1.chart-pie { -fx-pie-color: #e681a4; }
+.default-color2.chart-pie { -fx-pie-color: #a94a70; }
+.default-color3.chart-pie { -fx-pie-color: #f0a9bf; }
+.default-color4.chart-pie { -fx-pie-color: #bd6b8b; }
+.default-color5.chart-pie { -fx-pie-color: #f6cada; }
+.dialog-pane { -fx-background-color: #fff8fa; }
+.dialog-pane .header-panel { -fx-background-color: #f8dce6; }
+.dialog-pane .header-panel .label { -fx-text-fill: #6c374f; }
+.dialog-pane .button-bar .button { -fx-background-color: #f1cada; -fx-text-fill: #713c53; -fx-background-radius: 10px; }
+.dialog-pane .button-bar .button:hover { -fx-background-color: #d66891; -fx-text-fill: white; }
+.table-view .column-header-background { -fx-background-color: #f5d8e3; -fx-background-radius: 10px 10px 0 0; }
+.table-view .column-header, .table-view .filler { -fx-background-color: transparent; }
+.table-view .column-header .label { -fx-text-fill: #78465c; }
+.table-row-cell { -fx-background-color: rgba(255,255,255,.74); -fx-text-background-color: #60364a; }
+.table-row-cell:odd { -fx-background-color: rgba(251,231,238,.68); }
+.table-row-cell:selected { -fx-background-color: #efbfd0; }
